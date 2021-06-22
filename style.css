@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background-color:white;
+    border-top: 5px solid purple;
+    padding: 10px 250px 0px 250px;
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    justify-content: space-between;
+    
+
+}
+#av-heading {
+    display:flex;
+    justify-content: left;
+    text-decoration-color: lightgray;
+   
+}
+#right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+
+}
+#sub-header {
+    padding-left:250px;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#advertise {
+    display: flexbox;
+    width: 100%;
+    background-color: lightgray;
+}
+.body {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+#left-pic {
+    height: 300px;
+    width: 500px;
+}
+.left-body {
+    padding: 250px;
+}
+#sub-pic {
+    text-decoration-color: purple;
+}
