@@ -1,50 +1,63 @@
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    background-color:white;
-    border-top: 5px solid purple;
-    padding: 10px 250px 0px 250px;
-    font-family: Arial, sans-serif;
-    line-height: 24px;
-    justify-content: space-between;
-    
-
-}
-#av-heading {
-    display:flex;
-    justify-content: left;
-    text-decoration-color: lightgray;
-   
-}
-#right-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-
-}
-#sub-header {
-    padding-left:250px;
-    align-items: center;
-    font-family: sans-serif;
-}
-
-#advertise {
-    display: flexbox;
-    width: 100%;
+body {
     background-color: lightgray;
 }
-.body {
-    grid-template-columns: 2fr 1fr 1fr;
+.top-bar {
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
 }
-#left-pic {
-    height: 300px;
+.top-bar div {
+    margin-right: 10px;
+}
+.header {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar{
+    border: 1px solid purple;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    
+
+}
+.nav-bar div {
+    margin-right: 10px;
+}
+.main {
+    border: 1px solid yellow;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 640px 1fr 1fr;
+    grid-template-rows: 335px 335px;
+    grid-template-areas: 
+    "big story1 story2"
+    "big story3 story4"
+;
+}
+#logo {
+    height: 40px;
+}
+
+#big-story {
+    grid-area: big;
+
+}
+#big-img {
+    height: 250px;
     width: 500px;
 }
-.left-body {
-    padding: 250px;
+#big-text {
+    display: flex;
+    color: blueviolet;
+    padding: 20px 0px 20px 0px;
+    font-size: 15px;
 }
-#sub-pic {
-    text-decoration-color: purple;
+#big-text2 {
+    display: flex;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
